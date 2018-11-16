@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variavéis 
+
+Fontes */
+/*Cores */
+/* Cabeçaho */
+.cabecalho-principal {
+  padding: 15px 0;
+}
+
+.cabecalho-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contato-cabecalho {
+  display: flex;
+}
+
+.email-icone-cabecalho {
+  font-size: 4em;
+  padding-right: 12px;
+}

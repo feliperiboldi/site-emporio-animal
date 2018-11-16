@@ -2,3 +2,37 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+/* Variavéis 
+
+Fontes */
+$fonte-padrao: "Lato";
+$fonte-secundaria: "Ranga";
+$fonte-light: 300;
+$fonte-regular: 400;
+$fonte-bold: 700;
+$fonte-black: 900;
+
+/*Cores */
+$cor-principal: #1a1416;
+$cor-secundaria: #fdcc03;
+
+/* Cabeçaho */
+.cabecalho-principal {
+	padding: 15px 0;
+}
+
+.cabecalho-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contato-cabecalho {
+	display: flex;
+}
+
+.email-icone-cabecalho {
+	font-size: 2em;
+	padding-right: 12px;
+}
