@@ -19,23 +19,87 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Ranga:400,700">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/scss/main.css">
   </head>
   <body>
     <header class="cabecalho-principal">
-        <div class="container">
-            <div class="cabecalho-area">
-                <div class="logo-cabecalho">
-                    <a href="#" class="navbar-brand">Empório Animal</a>
-                </div>
+        <nav class="navbar navbar-expand-lg navbar-light menu-principal">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    Empório Animal
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="contato-cabecalho">
-                    <i class="fa fa-envelope email-icone-cabecalho"></i>
-                    <p>Envie um E-mail <br/> contato@emporioanimal.com.br</p>
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">A empresa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
+
+    <main class="conteudo-principal">
+        <section class="carousel-principal">
+            <div class="owl-carousel owl-carousel-home owl-theme">
+                <div class="item">
+                    <div class="img-banner" style="background-image: url('./img/banner1.jpg')">
+                        <div class="pelicula-banner"></div>
+                        <div class="texto-banner-area">
+                            <h1 class="titulo-banner">Adote um Animal</h1>
+                            <p class="subtitulo-banner">Faça o bem tirando um animal das ruas.</p>
+                            <div class="btn-banner-area">
+                                <button type="button" class="btn btn-banner">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="a-empresa">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2 class="titulo-sessao">Bem-Vindo ao PetShop</h2>
+                        <p class="texto-corpo">A Empório Animal foi criada pelo amor que os proprietários tem por cachorros e gatos, especialmente por um Beagle, chamado Bob, muito fofo e único, que hoje está com 9 anos, gordinho e muito querido.Pensando no que ele precisa e tantos outros cachorrinhos e gatinhos, a loja foi projetada para atender as necessidades desses queridos peludos e peludinhos.A satisfação da loja é oferecer produtos de ótima qualidade que atenda desde os mimos até as necessidades mais importante de nossos Pets.</p>
+                    </div>
+                    <div class="col-md-4 img-sobre-area">
+                        <img src="./img/dog1.jpg" class="img-sobre">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="doacao">
+            <div class="container">
+                <div class="doacao-area">
+                    <div class="texto-doacao">
+                        <h2 class="titulo-sessao">Os animais de rua precisam da sua ajuda...</h2>
+                    </div>
+                    <div class="btn-doacao">
+                        <button type="button" class="btn btn-doacao">Fazer Doação</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -47,5 +111,18 @@
     <script src="./assets/js/masks.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/owl-scripts.js"></script>
+    <script type="text/javascript">
+        if($(window).width() > 991) {
+            $('.img-banner').height($(window).height() - 56);
+            $(window).resize(function () {
+                $('.img-banner').height($(window).height() - 56);
+            });
+        } else {
+            $('.img-banner').height($(window).height() - 56);
+            $(window).resize(function () {
+                $('.img-banner').height($(window).height() - 56);
+            });
+        }
+    </script>
   </body>
 </html>

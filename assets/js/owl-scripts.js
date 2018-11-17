@@ -1,17 +1,16 @@
-$('.owl-parceiros').owlCarousel({
+$('.owl-carousel-home').owlCarousel({
     loop:true,
-    margin:10,
-    center:true,
-    nav:false,
+    margin:0,
+    nav:true,
     responsive:{
         0:{
             items:1
         },
-        768:{
-            items:3
+        600:{
+            items:1
         },
         1000:{
-            items:5
+            items:1
         }
     }
 })

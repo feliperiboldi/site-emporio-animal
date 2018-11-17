@@ -15,24 +15,191 @@ $fonte-black: 900;
 
 /*Cores */
 $cor-principal: #1a1416;
+$cor-branca: #fff;
 $cor-secundaria: #fdcc03;
 
+/* Espaçamentos */
+$espaco-sessao: 70px;
+
 /* Cabeçaho */
-.cabecalho-principal {
-	padding: 15px 0;
+.menu-principal {
+	background-color: $cor-secundaria;
 }
 
-.cabecalho-area {
+.nav-link {
+	font: {
+		family: $fonte-padrao;
+		size: 1em;
+		weight: $fonte-regular;  
+	}
+	letter-spacing: 0.7px;
+	text-transform: uppercase;
+	color: $cor-principal !important;
+}
+
+.nav-link:hover {
+	font-weight: $fonte-black;
+	transition: 0.2s;
+}
+
+/* Carousel */
+.img-banner {
+    background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pelicula-banner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(26, 20, 22, 0.7);
+	z-index: 999;
+}
+
+.texto-banner-area {
+	z-index: 999;
+}
+
+.titulo-banner {
+	font: {
+		family: $fonte-secundaria;
+		size: 5em;
+		weight: $fonte-bold; 
+	}
+	text-align: center;
+	color: $cor-branca;
+}
+
+.subtitulo-banner {
+	font: {
+		family: $fonte-padrao;
+		size: 1.3em;
+		weight: $fonte-regular; 
+	}
+	text-align: center;
+	color: $cor-branca;
+	margin-top: -20px;
+}
+
+.btn-banner-area {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-banner {
+	font: {
+		family: $fonte-padrao;
+		size: 1em;
+		weight: $fonte-regular; 	
+	}
+	text-transform: uppercase;
+	border-radius: 2em;
+	color: $cor-principal;
+	background-color: $cor-secundaria;
+}
+
+.btn-banner:hover {
+	color: $cor-branca;
+	border: 2px solid $cor-secundaria;
+	background-color: transparent;
+}
+
+/* A Empresa */
+.a-empresa {
+	padding-top: $espaco-sessao;
+}
+
+.titulo-sessao {
+	font: {
+		family: $fonte-secundaria;
+		size: 3em;
+		weight: $fonte-bold; 	
+	}
+	color: $cor-principal;
+	text-align: center;
+}
+
+.texto-corpo {
+	font: {
+		family: $fonte-padrao;
+		size: 1.02em;
+		weight: $fonte-regular; 	
+	}
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	.img-sobre-area {
+		display: none;
+	}
+}
+
+.img-sobre {
+	margin-left: 70%;
+	max-width: 40%;
+}
+
+@media (max-width: 991px) {
+	.img-sobre {
+	  margin-left: 30%;
+	  max-width: 70%;
+	}
+}
+
+/* Categorias */
+.doacao {
+	margin-top: $espaco-sessao;
+	background-image: url('../../img/pattern.jpg');
+	background-size: cover;
+	background-position: center;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.doacao {
+		display: block;
+	}
+}
+
+.doacao-area {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.contato-cabecalho {
-	display: flex;
+.doacao-area > div > h2 {
+	font: {
+		family: $fonte-secundaria;
+		size: 2.3em;
+		weight: $fonte-regular; 	
+	}
+	text-align: left !important;
 }
 
-.email-icone-cabecalho {
-	font-size: 2em;
-	padding-right: 12px;
+.btn-doacao {
+	font: {
+		family: $fonte-padrao;
+		size: 1em;
+		weight: $fonte-regular; 	
+	}
+	text-transform: uppercase;
+	background-color: $cor-principal;
+	color: $cor-secundaria;
+}
+
+.btn-doacao:hover {
+	background-color: transparent;
+	color: $cor-principal;
+	border: 1px solid $cor-principal;
+	transition: 0.3s;
 }
