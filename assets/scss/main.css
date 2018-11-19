@@ -30,6 +30,10 @@ Fontes */
 }
 
 /* Carousel */
+.carousel-principal {
+  margin-top: 56px;
+}
+
 .img-banner {
   background-size: cover;
   background-position: center;
@@ -192,5 +196,255 @@ Fontes */
   border: 1px solid #1a1416;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+/* Produtos */
+@media (max-width: 767px) {
+  .categorias-area-p {
+    padding-top: 20px;
+  }
+}
+
+.produtos {
+  padding-top: 70px;
+}
+
+.menu-produtos {
+  padding-top: 20px;
+}
+
+.menu-categoria-ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  list-style-type: none;
+}
+
+.categoria-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.link-categoria:hover {
+  color: #fdcc03;
+  text-decoration: none;
+}
+
+.titulo-categoria {
+  font-family: "Lato";
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1a1416;
+}
+
+.titulo-categoria:hover {
+  color: #fdcc03;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.img-categoria {
+  max-width: 6.5em;
+  padding: 10px 0;
+}
+
+.list-group-item.active {
+  background-color: #fff;
+  border: 2px solid #1a1416;
+}
+
+.produtos-area {
+  padding-top: 40px;
+}
+
+.produto-img-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10px 25px 10px;
+  border: 2px solid #fdcc03;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-produto {
+    max-width: 95%;
+  }
+}
+
+.btn-comprar {
+  font-family: "Lato";
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #fdcc03;
+  border-radius: 1.3em;
+  color: #fdcc03;
+  margin-top: 10px;
+}
+
+.btn-comprar:hover {
+  color: #fff;
+  background-color: #fdcc03;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.produto-area-p {
+  padding-top: 30px;
+}
+
+/* COntato */
+.contato {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.contato-area-p {
+  padding-top: 40px;
+}
+
+.input-contato {
+  width: 80%;
+  border-radius: 1.2em;
+  border: 2px solid #1a1416;
+}
+
+.input-contato:focus {
+  border: 3px solid #fdcc03;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.input-contato::-webkit-input-placeholder {
+  font-family: "Lato";
+  font-size: 1em;
+  font-weight: 400;
+  color: #1a1416;
+}
+
+.input-contato:-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 1em;
+  font-weight: 400;
+  color: #1a1416;
+}
+
+.input-contato::-ms-input-placeholder {
+  font-family: "Lato";
+  font-size: 1em;
+  font-weight: 400;
+  color: #1a1416;
+}
+
+.input-contato::placeholder {
+  font-family: "Lato";
+  font-size: 1em;
+  font-weight: 400;
+  color: #1a1416;
+}
+
+.btn-form-contato {
+  font-family: "Lato";
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fdcc03;
+  text-transform: uppercase;
+  border-radius: 1.2em;
+  width: 80%;
+}
+
+.btn-form-contato:hover {
+  color: #fdcc03;
+  background-color: #1a1416;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 767px) {
+  .input-contato {
+    width: 100%;
+  }
+  .btn-form-contato {
+    width: 100%;
+  }
+}
+
+.texto-corpo-contato {
+  font-family: "Lato";
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #1a1416;
+}
+
+.mapa-contato {
+  padding-top: 20px;
+}
+
+/* Rodapé */
+.rodape-principal {
+  padding: 20px 0;
+  background-color: #1a1416;
+  border-bottom: 5px solid #fdcc03;
+}
+
+.rodape-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .rodape-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.creditos-rodape {
+  font-family: "Lato";
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.titulo-newsletter {
+  font-family: "Lato";
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.fa {
+  font-size: 1.2em;
+  color: #fff;
+  padding-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
