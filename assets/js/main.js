@@ -17,3 +17,9 @@ if($(window).width() > 991) {
         $('.img-banner').height($(window).height() - 56);
     });
 }
+
+new WOW().init();
+
+if($(window).width() < 992) {
+    $('.wow').removeClass('wow');
+}
