@@ -23,3 +23,15 @@ new WOW().init();
 if($(window).width() < 992) {
     $('.wow').removeClass('wow');
 }
+
+if($(window).width() > 991) {
+    $('.erro-404').height($(window).height());
+    $(window).resize(function () {
+        $('.erro-404').height($(window).height());
+    });
+    } else {
+    $('.erro-404').height($(window).height());
+    $(window).resize(function () {
+        $('.erro-404').height($(window).height());
+    });
+}

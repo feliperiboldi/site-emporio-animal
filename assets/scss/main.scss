@@ -454,3 +454,47 @@ $espaco-sessao: 70px;
 	color: #fff;
 	padding-left: 10px;
 }
+
+/* 404 */
+.erro-404 {
+	background-color: #1a1416;
+}
+
+.titulo-404 {
+	font: {
+		family: $fonte-padrao;
+		size: 7em;
+		weight: $fonte-black; 	
+	}
+	padding-top: $espaco-sessao;
+	color: $cor-secundaria;
+}
+
+.subtitulo-404 {
+	font: {
+		family: $fonte-padrao;
+		size: 2em;
+		weight: $fonte-bold; 	
+	}
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.btn-retornar {
+	font: {
+		family: $fonte-padrao;
+		size: 1em;
+		weight: $fonte-bold; 	
+	}
+	text-transform: uppercase;
+	color: #fff;
+	border: 1px solid $cor-secundaria;
+	background-color: transparent;
+	border-radius: 3em;
+}
+
+.btn-retornar:hover {
+	background-color: $cor-secundaria;
+	color: $cor-principal;
+	transition: 0.3s;
+}
